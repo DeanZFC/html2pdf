@@ -1,0 +1,93 @@
+body{background-color: #f6f6f6;}
+.container-s{padding: 16px;}
+.main{margin-top: 15px;border-radius: 4px;padding: 30px 20px 18px 20px;background-color: #fff;overflow: hidden;}
+.step{text-align: center;}
+.step ul{display: inline-block;margin: 0 auto;}
+.step li{position: relative;display: inline-block;float: left;text-align: center;width: 360px;}
+.step li:after{content: '';display: inline-block;position: absolute;top: 10px;height: 5px;z-index: 1;}
+.step li.fir:after{left: 50%;width: 50%;background-color: #CDCDCD;}
+.step li.fir.active:after{background-color: #F4664C;}
+.step li.last:after{right: 50%;width: 50%;background-color: #CDCDCD;}
+.step li .stepitem{display: inline-block;position: relative;z-index: 2;}
+.step li span{display: inline-block;width: 25px;height: 25px;line-height: 25px;text-align: center;background-color: #CDCDCD;color: #fff;font-size: 16px;font-weight: bold;border-radius: 50%;}
+.step li p{font-size: 14px;font-weight: bold;margin-top: 5px;color: #CDCDCD;}
+.step li.active span{background-color: #F4664C;}
+.step li.active p{color: #F4664C;}
+
+.article{position: relative;}
+.article .setcurrent{position: absolute;top: 20px;right: 20px;color: #1891ff;font-size: 12px;text-decoration: none;}
+.article .reportname{}
+.article .row-s{}
+.article .txt-row .name{font-size: 16px;color: #333;margin-right: 15px;}
+.article .txt-row .vicename{font-size: 12px;color: #999;}
+.article .row-s{margin: 10px 0 25px;}
+.article .row-s .panel{background-color: #F9F9F9;}
+.article .row-s .panel .panel-body{padding: 30px;}
+
+.title{text-align: center;color: #666;margin-bottom: 40px;font-size: 14px;font-weight: bold;}
+.title-w{display: inline-block;width: 300px;}
+
+.row-g{display: table;width: 100%;margin-bottom: 35px;font-size: 14px;color: #666;}
+.row-g .name{display: table-cell;width: 78px;font-weight: bold;}
+.row-g .con{display: table-cell;}
+.nav{display: inline-block;position: relative;z-index: 3;}
+.nav>li>a{padding: 4px 20px;font-size: 12px;}
+.nav-primary>li:first-child>a{border-top-left-radius: 18px;border-bottom-left-radius: 18px;}
+.nav-primary>li:last-child>a{border-top-right-radius: 18px;border-bottom-right-radius: 18px;}
+
+.row-g .rg-right{text-align: right;margin-bottom: 20px;}
+.row-g .rg-right .sel-w{display: inline-block;width: 90px;}
+.row-g .rg-right .sel-w select{padding: 0px 8px;height: 28px;}
+.row-g .rg-right .set-btn{margin-left: 20px;display: inline-block;font-size: 12px;color: #1891ff;padding-left: 18px;background-image: url(../images/btn-set.png);background-repeat: no-repeat;background-size: 16px 15px;background-position: left center;text-decoration: none;}
+.row-g .rg-right .del-btn{margin-left: 20px;display: inline-block;font-size: 12px;color: #f66a50;padding-left: 18px;background-image: url(../images/btn-del.png);background-repeat: no-repeat;background-size: 16px 15px;background-position: left center;text-decoration: none;}
+
+.echarts{position: relative;z-index: 2;}
+.line{height: 1px;background-color: #dfe9f0;margin-top: 40px;margin-bottom: 12px;}
+a.btn-addecharts{font-size: 12px;color: #1891ff;padding-left: 20px;background-image: url(../images/btn-addecharts.png);background-repeat: no-repeat;background-size: 16px 15px;background-position: left center;text-decoration: none;}
+.page{text-align: right;font-size: 12px;color: #999;}
+
+a.addpage{display: block;height: 40px;line-height: 40px;background-color: #F9F9F9;color: #999;text-align: center;margin-bottom: 30px;}
+a.addpage:hover{background-color: #eee;}
+a.addpage .ablock{display: inline-block;}
+a.addpage i{font-size: 20px;float: left;margin: 10px 6px 0 0;}
+
+.ope-w{text-align: center;margin-top: 50px;}
+.ope-w a{color: #fff;font-size: 14px;border-radius: 18px;padding: 9px 25px;text-decoration: none;margin: 0 8px;}
+a.preview{background-color: #F4674C;}
+a.save{background-color: #9FDA4E;}
+a.send{background-color: #1891FF;}
+
+.reportpageitem{margin-top: 35px;border-bottom: 1px solid #dfe9f0;}
+.reportpageitem:last-child{border-bottom: 0;}
+.del-reportitem{float: right;color: #ddd;font-size: 31px;cursor: pointer;}
+
+
+
+.selection-container {height:350px;margin:10px;display: inline-block;}
+.select-box {width:250px;float:left;border:1px solid #ebeef5;border-radius:4px}
+.arrows-box {width:110px;height:100%;float:left;position:relative}
+.select-content {width:100%;height:320px;overflow-y:auto;overflow-x:hidden}
+.select-box-title {cursor: pointer;height:40px;line-height:40px;font-size:16px;padding:0 6%;display:flex;align-items:center;position:relative;width:100%;background:#f5f7fa;border-bottom:1px solid #ebeef5;box-sizing:border-box;color:#000}
+.select-box-title label:before {left:-14px!important;top:4px!important}
+.select-box-title label:after {top:3px!important}
+.checkboxs {vertical-align:middle}
+.unselect-ul {padding:10px 0}
+.selected-ul {padding:10px 0}
+.select-content li {list-style:none;cursor:pointer;position:relative;padding:5px 15px;font-size:12px;text-align: left;}
+.select-box input[type=checkbox] {position:absolute;left:19px;top:0;width:20px;height:20px;opacity:0;z-index: 1;}
+.select-box label {position:absolute;left:13px;top:1px;height:20px;line-height:20px;z-index: 2;}
+.select-box span {position: relative;padding-left:30px;font-size: 14px;color: #666;z-index: 3;}
+.select-box label:after {content:'';transition: all 0.3s;position:absolute;left:0;top:-2px;width:30px;height:30px;background-image: url(../images/select-check1.png);background-repeat: no-repeat;background-position: center;background-size: 100%;background-position-y: 0;}
+.select-box input[type=checkbox]:checked+label:after {background-position-y: -28px;}
+.arrow-btns {width:100%;position:absolute;top:50%;margin-top:-45px}
+.btn-cursor {background-color:#409eff!important;border:1px solid #409eff!important;transition:all .3s ease;-webkit-transition:all .3s ease;-moz-transition:all .3s ease}
+.btn-cursor svg {fill:#fff!important;transition:all .3s ease;-webkit-transition:all .3s ease;-moz-transition:all .3s ease}
+.arrow-btn {display:block;position:relative;width:40px;height:40px;border-radius:25px;background:#eee;margin:0 auto 5px;cursor:pointer;border:1px solid #dcdfe6;background-color:#f5f7fa;color:#c0c4cc;outline:none;font-size:30px}
+.arrow-btn span{display: inline-block;position: absolute;top: -6px;left: 15px}
+.arrow-btn svg {padding:11px;width:17px;height:17px;color:#fff;fill:#c0c4cc}
+.btn-cursor span{color: #fff;}
+.send-w{padding: 0 10px;min-height: 150px;}
+.send-w .row{margin: 10px 0 30px;}
+.send-w .checkradio-inline{margin-right: 15px;}
+.send-w .send-ope button{margin: 0 8px;}
+
